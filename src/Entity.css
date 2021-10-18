@@ -1,0 +1,92 @@
+.entity-container {
+  width: calc(98%);
+  height: calc(98%);
+  border-radius: 2px;
+  background-color: white;
+}
+.entity-container.fact {
+  border: 1px solid #ced4de;
+}
+.entity-container.fact:hover {
+  border: 1px solid #1890ff;
+}
+.entity-container.dim {
+  border: 1px solid #cdddfd;
+}
+.entity-container.dim:hover {
+  border: 1px solid #1890ff;
+}
+.entity-container.other {
+  border: 1px solid #decfea;
+}
+.entity-container.other:hover {
+  border: 1px solid #1890ff;
+}
+.entity-container .content {
+  margin: 1px 1px;
+  width: calc(98%);
+  height: calc(98%);
+}
+.entity-container .content.fact {
+  background-color: #ced4de;
+}
+.entity-container .content.dim {
+  background-color: #cdddfd;
+}
+.entity-container .content.other {
+  background-color: #decfea;
+}
+.entity-container .content .head {
+  width: calc(88%);
+  height: 38px;
+  margin-left: 6px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.entity-container .content .head .type {
+  padding-right: 8px;
+}
+.entity-container .content .head .more {
+  cursor: pointer;
+}
+.entity-container .content .body {
+  width: calc(88%);
+  height: calc(58%);
+  margin-left: 6px;
+  margin-bottom: 6px;
+  background-color: white;
+  overflow: auto;
+  cursor: pointer;
+}
+.entity-container .content .body .body-item {
+  width: 100%;
+  height: 28px;
+  font-size: 12px;
+  color: #595959;
+  border-bottom: 1px solid rgba(206, 212, 222, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.entity-container .content .body .body-item .name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 6px;
+}
+.entity-container .content .body .body-item .name .pk,
+.entity-container .content .body .body-item .name .fk {
+  width: 12px;
+  font-family: HelveticaNeue-CondensedBold;
+  color: #ffd666;
+  margin-right: 6px;
+}
+.entity-container .content .body .body-item .type {
+  color: #bfbfbf;
+  font-size: 8px;
+  margin-right: 8px;
+}

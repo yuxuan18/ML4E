@@ -1,0 +1,582 @@
+body {
+    color: #123693;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-image: url(../images/mlcover.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    background-position: center;  
+    background-size: cover;       
+    font-size: 48px;
+    padding: 177px 0;
+    text-align: center;
+    font-family: sans-serif;
+    animation-name: header_color_change;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header_color_change {
+    from {color: rgb(119, 211, 102);}
+    to {color: #3d87c3;}
+}
+
+h2 {
+    color: #0053d6;
+    font-size: 28px;
+    padding: 20px 0;
+    font-family: "Lora", sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    text-align: start;
+}
+
+.abstract{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+p {
+    padding: 20px 0;
+    /* font-family: "Raleway", sans-serif; */
+    font-weight: normal;
+    line-height: 1.5;
+    /* text-align: justify; */
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px 25px; 
+}
+
+
+.nav_links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.nav_links > li{
+    padding: 10px 20px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #123693;
+    text-transform: capitalize;
+}
+
+/* .nav_links > a:before {
+    background-image: url(../images/goboard_icon.png);
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 18px;
+    margin-right: 10px;
+    position: relative;
+    width: 18px;
+}
+   */
+.nav_links a:hover{
+    text-decoration: underline;
+}
+
+.nav_links .current-page {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bolder;
+    /* background-color: bisque; */
+    border: 1px hidden;
+    border-radius: 20px;
+    padding: 0 20px;
+    text-decoration: underline;
+}
+
+header > p{
+    padding: 50px 50px;
+    font-size: 1.5em;
+    background-color: #14234b;
+    color: white;
+    font-weight: bold;
+    font-family: "Lora", sans-serif;
+}
+
+img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* .middle-img {
+    display: none;
+} */
+
+.alphago-logo {
+    display: block;
+    width: 0;
+    margin: 0 auto;
+    height: auto;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding: 20px; */
+}
+
+.section-link {
+    text-align: right;
+}
+
+.section-link > a {
+    text-decoration: none;
+    border: 1px solid #0053d6;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.section-link > a:hover {
+    color: white;
+    background-color: #0053d6;
+}
+
+.section-container{
+    padding: 0 25px;
+    background-color: white;
+    margin: 0;
+    /* border: 2px solid red; */
+}
+
+.shallow-green {
+    background-color: #d4ffed;
+}
+.shallow-green > div {
+    border: 5px solid green;
+}
+.wrap-element {
+    padding: 0;
+}
+
+.wrapped-iframe {
+    width: 100%;
+    height: 80vw;
+    padding: 20px 0;
+    max-width: 1200px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.main-container .paper-item {
+    padding-bottom: 25px;
+}
+
+.skip a{
+    background: #d4ffed;
+    left: 10px;
+    padding: 5px;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+    z-index: 1;
+    text-decoration: none;
+    position: absolute;
+    top: -50px;
+}
+
+.skip a:focus{
+    top: 10px;
+}
+
+.quote {
+    padding: 50px 50px;
+    /* background-color: #14c8b9; */
+    background-color: #14234b;
+
+}
+
+.quote-mark {
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+    font-family: "Lora", sans-serif;
+    text-align: center;
+}
+
+.quote-words{
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-family: "Lora", sans-serif;
+    text-align: center;
+}
+
+.quote-author {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.top {
+    position: fixed;
+    text-decoration: none;
+    right: -30px;
+    top: 100px;
+    transform: rotate(-90deg);
+}
+
+.top a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #0053d6;
+    border: 1px solid #0053d6;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.top a:hover {
+    color: white;
+    background-color: #0053d6;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%; 
+    padding: 20px;  
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin: 10px;
+    resize: vertical;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+
+textarea {
+    height: 10em;
+}
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #123693;
+    width: 100px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #0053d6;
+    animation-name: long_submit;
+    animation-duration: 1.5s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes long_submit {
+    from {width: 100px;}
+    to {width: 100%;}
+}
+  
+  /* Add a background color and some padding around the form */
+.form-container {
+    border-radius: 10px;
+    background-color: #d4ffed;
+    padding: 20px;
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    width: 550px;
+    margin: 0 auto;
+    display: none;
+    padding: 50px;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #0053d6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 35%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -5px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+
+  .left::after {
+      right: -24px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+  }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    min-height: 700px;
+    margin: 0 auto;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  
+  /* This container is needed to position the front and back side */
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  
+  /* Position the front and back side */
+  
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+  
+  
+  /* Style the front side (fallback if image is missing) */
+  
+.flip-card-front {
+    background-color: #14234b;
+    color: white;
+    color: black;
+}
+  
+  
+  /* Style the back side */
+  
+.flip-card-back {
+    background-color: #14234b;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.mySlides {
+    display: none;
+    animation-name: show_up;
+    animation-duration: 1s;
+    animation-iteration-count: inherit;
+}
+
+@keyframes show_up {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media screen and (min-width: 768px){
+    /* .main-container {
+        grid-template-columns: 1fr 1fr;
+    } */
+
+    .section-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 25px;
+        padding: 20px 50px;
+    }
+
+    .alphago-logo {
+        width: 50%;
+    }
+
+    .nav_links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav {
+        padding-bottom: 10px;
+    }
+
+    .flip-card {
+        min-height: 500px;
+      }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .section-container {
+        grid-template-columns: 2fr 4fr 2fr;
+        column-gap: 100px;
+        
+        border: 20px solid rgb(98, 165, 98);
+    }
+
+    .special-container {
+        column-gap: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .timeline {
+        display: block;
+    }
+
+    .alphago-logo {
+        width: 600px;
+    }
+
+    .wrap-element{
+        display: flex;
+        justify-content: center;
+    }
+    .wrapped-iframe {
+        height: 80vh;
+        padding-bottom: 50px;
+    }
+
+    .nav_links a {
+        font-size: 1.2em;
+    }
+
+    /* .middle-img {
+        display: block;
+    } */
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    h1 {
+        animation: none;
+        color: white;
+        background-attachment: initial;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+    input[type=submit]:hover {
+        animation: none;
+    }
+
+    .flip-card-inner {
+        transition: none;
+      }
+
+    .mySlides {
+        animation: none;
+    }
+}
