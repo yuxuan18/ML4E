@@ -1150,6 +1150,7 @@ export default class Example extends React.Component<any, any> {
           <div>
             <h2>Panel</h2>
             <form onSubmit={this.handleSubmit}>
+              <p>
               <label>
               You consider yourself as a
               <select value={this.state.value} onChange={this.handleChange}> 
@@ -1158,19 +1159,21 @@ export default class Example extends React.Component<any, any> {
                 <option value="professional">Professional</option>
               </select>
               </label>
+              </p>
               
-            <p>
+            <p>  
+            <label>
             What kind of variable of target label do you want?
-            <p>
             <select id="q1"> 
               <option value="">--Choose an answer--</option>
               <option value="q1a1">Categorical</option>
               <option value="q1a2">Numerical</option>
             </select>
-            </p>
+            </label>
             </p>
 
             <p>
+            <label>
             What kind of model do you want?
             <select id="q2"> 
               <option value="">--Choose an answer--</option>
@@ -1178,9 +1181,11 @@ export default class Example extends React.Component<any, any> {
               <option value="q2a2">Classifier</option>
               <option value="q2a3">Regressor</option>
             </select>
+            </label>
             </p>
 
             <p>
+              <label>
             What kind of metric do you care?
             <select id="q3"> 
               <option value="">--Choose an answer--</option>
@@ -1188,24 +1193,28 @@ export default class Example extends React.Component<any, any> {
               <option value="q3a2">Precision</option>
               <option value="q3a3">Recall</option>
             </select>
+            </label>
             </p>
 
             <p>
+              <label>
             Do you have missing data?
             <select id="q4"> 
               <option value="">--Choose an answer--</option>
               <option value="q4a1">Yes</option>
               <option value="q4a2">No</option>
             </select>
+            </label>
             </p>
-
+            <p>
+            <button className="ipbt"
+                  type="button">import dataset</button>
+                  </p>
             <input type="submit" value="Submit" />
             </form>
           </div>
           <div>
-            <div className="app">
-              <div className="app-stencil" ref={this.refStencil} />
-              <div className="app-content" ref={this.refContainer} />
+            <h2>Pipeline</h2>
             <div className="app-btns">
               <Button.Group>
                 <Button onClick={this.onUndo} disabled={!this.state.canUndo}>
@@ -1216,18 +1225,47 @@ export default class Example extends React.Component<any, any> {
                 </Button>
               </Button.Group>
             </div>
+            <div className="app">
+              <div className="app-stencil" ref={this.refStencil} />
+              <div className="app-content" ref={this.refContainer} />
             </div>
           </div>
         <div>
-          <h2>Modules</h2>
-
-          <h3>Templates</h3>
-          <button>template 1</button>
-          <button>template 2</button>
-          <button>template 3</button>
-          <button>template 4</button>
-          <button>template 5</button>
-          <button>template 6</button>
+          <h2>Templates</h2>
+          <p>
+          <button className="tpltb"
+                  type="button">
+              Tamplate 1
+          </button>
+          </p>
+          <p>
+          <button className="tpltb"
+                  type="button">template 2</button>
+          </p>
+          <p>
+          <button className="tpltb"
+                  type="button">template 3</button>
+          </p>
+          <p>
+          <button className="tpltb"
+                  type="button">template 4</button>
+          </p>
+          <p>
+          <button className="tpltb"
+                  type="button">template 5</button>
+          </p>
+          <p>
+          <button className="tpltb"
+                  type="button">template 6</button>
+          </p>
+          <p>
+          <button className="ctrlb"
+                  type="button">start</button>
+          <button className="ctrlb"
+                  type="button">stop</button>
+          <button className="ctrlb"
+                  type="button">reset</button>
+          </p>
         </div>      
       </div>
     </div>
