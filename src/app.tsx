@@ -1160,6 +1160,7 @@ export default class Example extends React.Component<any, any> {
               </label>
               
             <p>
+<<<<<<< HEAD
             What kind of variable of target label do you want?
             <p>
             <select id="q1"> 
@@ -1199,6 +1200,29 @@ export default class Example extends React.Component<any, any> {
             </select>
             </p>
 
+=======
+            Q1
+            <select id="q1"> 
+              <option value="">--Choose an answer--</option>
+              <option value="q1a1">Answer 1</option>
+              <option value="q1a2">Answer 2</option>
+            </select>
+            </p>
+            Q2
+            <select id="q2"> 
+              <option value="">--Choose an answer--</option>
+              <option value="q2a1">Answer 1</option>
+              <option value="q2a2">Answer 2</option>
+            </select>
+            <p>
+            Q3
+            <select id="role"> 
+              <option value="">--Choose an answer--</option>
+              <option value="q3a1">Answer 1</option>
+              <option value="q3a2">Answer 2</option>
+            </select>
+            </p>
+>>>>>>> 7aa1cbc8f58aa32a81da17cc55f92f1d02efba08
             <input type="submit" value="Submit" />
             </form>
           </div>
