@@ -1235,28 +1235,28 @@ export default class Example extends React.Component<any, any> {
           <p>
           <button className="tpltb"
                   type="button">
-              Tamplate 1
+              Template 1
           </button>
           </p>
           <p>
           <button className="tpltb"
-                  type="button">template 2</button>
+                  type="button">Template 2</button>
           </p>
           <p>
           <button className="tpltb"
-                  type="button">template 3</button>
+                  type="button">Template 3</button>
           </p>
           <p>
           <button className="tpltb"
-                  type="button">template 4</button>
+                  type="button">Template 4</button>
           </p>
           <p>
           <button className="tpltb"
-                  type="button">template 5</button>
+                  type="button">Template 5</button>
           </p>
           <p>
           <button className="tpltb"
-                  type="button">template 6</button>
+                  type="button">Template 6</button>
           </p>
           <p>
           <button className="ctrlb"
