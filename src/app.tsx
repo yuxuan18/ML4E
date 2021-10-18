@@ -1258,6 +1258,7 @@ export default class Example extends React.Component<any, any> {
           <button className="tpltb"
                   type="button">Template 6</button>
           </p>
+          <h2>Control</h2>
           <p>
           <button className="ctrlb"
                   type="button">start</button>
