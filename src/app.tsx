@@ -80,7 +80,7 @@ export default class Example extends React.Component<any, any> {
       search: true,
       collapsable: true,
       stencilGraphWidth: 200,
-      stencilGraphHeight: 180,
+      stencilGraphHeight: 400,
       groups: [
         {
           name: "group1",
@@ -1160,27 +1160,45 @@ export default class Example extends React.Component<any, any> {
               </label>
               
             <p>
-            Q1
+            What kind of variable of target label do you want?
+            <p>
             <select id="q1"> 
               <option value="">--Choose an answer--</option>
-              <option value="q1a1">Answer 1</option>
-              <option value="q1a2">Answer 2</option>
+              <option value="q1a1">Categorical</option>
+              <option value="q1a2">Numerical</option>
             </select>
             </p>
-            Q2
+            </p>
+
+            <p>
+            What kind of model do you want?
             <select id="q2"> 
               <option value="">--Choose an answer--</option>
-              <option value="q2a1">Answer 1</option>
-              <option value="q2a2">Answer 2</option>
-            </select>
-            <p>
-            Q3
-            <select id="role"> 
-              <option value="">--Choose an answer--</option>
-              <option value="q3a1">Answer 1</option>
-              <option value="q3a2">Answer 2</option>
+              <option value="q2a1">Tree based</option>
+              <option value="q2a2">Classifier</option>
+              <option value="q2a3">Regressor</option>
             </select>
             </p>
+
+            <p>
+            What kind of metric do you care?
+            <select id="q3"> 
+              <option value="">--Choose an answer--</option>
+              <option value="q3a1">Accuracy</option>
+              <option value="q3a2">Precision</option>
+              <option value="q3a3">Recall</option>
+            </select>
+            </p>
+
+            <p>
+            Do you have missing data?
+            <select id="q4"> 
+              <option value="">--Choose an answer--</option>
+              <option value="q4a1">Yes</option>
+              <option value="q4a2">No</option>
+            </select>
+            </p>
+
             <input type="submit" value="Submit" />
             </form>
           </div>
@@ -1202,7 +1220,6 @@ export default class Example extends React.Component<any, any> {
           </div>
         <div>
           <h2>Modules</h2>
-          <h3>Instructions</h3>
 
           <h3>Templates</h3>
           <button>template 1</button>
